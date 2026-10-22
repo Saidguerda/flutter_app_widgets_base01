@@ -7,7 +7,7 @@ void main() {
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -48,6 +48,16 @@ class MainApp extends StatelessWidget {
                   Icon(Icons.email, color: Colors.red, size: 40),
                   Icon(Icons.camera_alt, color: Colors.purple, size: 40),
                   Icon(Icons.music_note, color: Colors.orange, size: 40),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text('Mon titre', style: TextStyle(fontSize: 28)),
+                  SizedBox(height: 20),
+                  Text('Ceci est ma description', style: TextStyle(fontSize: 14)),
+                  Icon(Icons.emoji_emotions, color: Colors.amber, size: 40),
                 ],
               ),
             ],
