@@ -17,11 +17,11 @@ class MainApp extends StatelessWidget {
               Text('Bonjour tout le monde !'),
               Text('Je suis étudiant en informatique'),
               Container(
-                margin: EdgeInsets.all(20),
+                margin: EdgeInsets.all(40),
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.green,
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(5),
                 ),
                 child: Text(
                   'Ma boîte avec Container',
@@ -30,7 +30,7 @@ class MainApp extends StatelessWidget {
               ),
               Text('cour de programmation offre des opportunités pour accéder au travail'),
               Stack(
-                alignment: Alignment.bottomRight,
+                alignment: Alignment.topLeft,
                 children: [
                   Container(width: 200, height: 200, color: Colors.orange[100]),
                   Icon(Icons.favorite, size: 100, color: Colors.red),
@@ -44,7 +44,7 @@ class MainApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Icon(Icons.phone, color: Colors.green, size: 40),
+                  Icon(Icons.phone, color: Colors.indigo, size: 40),
                   Icon(Icons.email, color: Colors.red, size: 40),
                   Icon(Icons.camera_alt, color: Colors.purple, size: 40),
                   Icon(Icons.music_note, color: Colors.orange, size: 40),
